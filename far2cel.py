@@ -6,7 +6,7 @@ def main():
     try:
         regex = re.search(r'([-+]?\d+)([c,C]$|[f,F]$)', data)
         result, degree, prefix = str(regex[0]), int(regex[1]), str(regex[2].lower())
-    except (TypeError, AttributeError):
+    except(TypeError, AttributeError):
         regex = ''
         print('Something is wrong!')
         return main()
