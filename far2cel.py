@@ -11,11 +11,9 @@ def main():
         if 'f' in prefix:
             print(''.join(str(i) for i in Conv(degree).fahrenheit()))
         else:
-            print(''.join(str(i) for i in Conv(degree).celcius()))
-        return main()
+            print(''.join(str(i) for i in Conv(degree).celsius()))
     else:
         print('Something is wrong!')
-        return main()
 
 
 if __name__ == '__main__':

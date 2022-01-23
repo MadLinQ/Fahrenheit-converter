@@ -8,11 +8,11 @@ class Conv():
         if result < -273.15:
             return('Temperature below absolute zero')
         else:
-            return(self.degree, ' degrees Fahrenheit equals ', round(result, 1), ' degrees Celcius')
+            return(self.degree, ' degrees Fahrenheit equals ', round(result, 1), ' degrees Celsius')
 
-    def celcius(self):
+    def celsius(self):
         result = (self.degree * 9 / 5) + 32
         if result < -459.67:
             return('Temperature below absolute zero')
         else:
-            return self.degree, ' degrees Celcius equals ', round(result, 1), ' degrees Fahrenheit'
+            return(self.degree, ' degrees Celsius equals ', round(result, 1), ' degrees Fahrenheit')
