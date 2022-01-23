@@ -1,2 +1,2 @@
 # Fahrenheit-converter
-Simple fahrenheit to celcius converter
+Simple fahrenheit to celsius converter
