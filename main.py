@@ -1,4 +1,5 @@
 import re
+from Conv import Conv
 
 
 def main():
@@ -9,11 +10,9 @@ def main():
         if regex is not None:
             degree, key = float(regex[1]), str(regex[3])
             if 'f' in key:
-                print(''.join(str(i) for i in (degree, ' degrees Fahrenheit equals ',
-                    round((lambda x: (x - 32) * 5 / 9)(degree), 1), ' degrees Celsius')))
+                print(''.join(str(i) for i in Conv(degree).fahrenheit()))
             else:
-                print(''.join(str(i) for i in (degree, ' degrees Celsius equals ',
-                    round((lambda x: (x * 9 / 5) + 32)(degree), 1), ' degrees Fahrenheit')))
+                print(''.join(str(i) for i in Conv(degree).celsius()))
         else:
             print('Something is wrong!')
             break
